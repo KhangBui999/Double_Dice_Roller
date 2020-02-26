@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/mTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:text="Double Dice Roller"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:paddingTop="2.5dp"
+            android:paddingBottom="10dp"
+            android:text="Click on the button below to roll the dice!"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/mBody"
+            android:layout_width="match_parent"
+            android:layout_height="264dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="204dp"
+                android:layout_height="319dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mDiceTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_condensed_bold"
+                    android:paddingTop="50dp"
+                    android:paddingBottom="10dp"
+                    android:text="Dice 1"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/mDiceImg1"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@android:drawable/screen_background_light_transparent" />
+
+                <TextView
+                    android:id="@+id/mDiceResult1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_extrabold"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="204dp"
+                android:layout_height="319dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mDiceTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_condensed_bold"
+                    android:paddingTop="50dp"
+                    android:paddingBottom="10dp"
+                    android:text="Dice 2"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/mDiceImg2"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@android:drawable/screen_background_light_transparent" />
+
+                <TextView
+                    android:id="@+id/mDiceResult2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_extrabold"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mTotalTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_condensed_bold"
+            android:paddingTop="20dp"
+            android:paddingBottom="2dp"
+            android:text="Sum of Dice Rolls"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:paddingBottom="20dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/mRollBtn"
+            android:layout_width="135dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Roll"
+            android:textAllCaps="true"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
